@@ -2,6 +2,7 @@
   "name": "@kaotypr/ll",
   "version": "0.0.1",
   "description": "A super lightweight logger library focused on supporting debugging. Zero dependencies, customizable log levels, and a clean, simple API for console output formatting.",
+  "license": "MIT",
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
