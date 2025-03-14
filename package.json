@@ -3,16 +3,37 @@
   "version": "0.0.1",
   "description": "A super lightweight logger library focused on supporting debugging. Zero dependencies, customizable log levels, and a clean, simple API for console output formatting.",
   "license": "MIT",
+  "author": "Adhitya Yosua Sanjaya Andaria",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaotypr/ll.git"
+  },
+  "homepage": "https://github.com/kaotypr/ll#readme",
+  "bugs": {
+    "url": "https://github.com/kaotypr/ll/issues"
+  },
+  "keywords": [
+    "logger",
+    "logging",
+    "debug",
+    "console",
+    "typescript",
+    "zero-dependencies"
+  ],
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": ["dist", "LICENSE", "README.md"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "bun test",
     "build": "tsup src/index.ts --format esm --dts",
     "format": "biome format . -write",
     "lint": "biome lint .",
-    "check": "biome check ."
+    "check": "biome check .",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
